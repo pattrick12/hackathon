@@ -28,5 +28,5 @@ func main() {
 			"success": "Hello from api-2"})
 	})
 
-	router.RUN(":" + port)
+	router.Run(":" + port)
 }

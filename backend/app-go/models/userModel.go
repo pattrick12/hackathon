@@ -9,7 +9,7 @@ type phonex struct {
 	country_code int    `validate:"required, min=1, max=999"`
 	phone_number uint64 `validate:"required, min 1000000000,max=9999999999"`
 }
-type user struct {
+type User struct {
 	ID            primitive.ObjectID `bson:"_id"`
 	First_name    *string            `json:"fname" validate:"required, min=2, max=100"`
 	Last_name     *string            `json:"lname" validate:"min=2, max=100"`
