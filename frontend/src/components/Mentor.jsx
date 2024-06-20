@@ -7,7 +7,7 @@ const Mentor = () => {
         <div className="upper">
             <div className="left-upper">
                 <div className="box">
-                    <span>Book your consulation with a mentor</span>
+                    <a style={{ fontFamily: 'Poppins', color: 'black' ,fontSize : '30px' }} href="/Bookaconsult">Book your consulation with a mentor</a>
                 </div>
             </div>
             <div className="right-upper">
@@ -20,7 +20,7 @@ const Mentor = () => {
             </div>
             <div className="left-upper">
                 <div className="box">
-                    <span>Calculate your growth parameters  by our automated tool</span>
+                    <a style={{ fontFamily: 'Poppins', color: 'black' ,fontSize : '30px' }} href="/calculator">Calculate your growth parameters  by our automated tool</a>
                 </div>
             </div>
         </div>

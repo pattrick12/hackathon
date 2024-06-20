@@ -16,7 +16,6 @@
     width: 100%;
     display: flex;
 }
-
 .right-upper{
     width: 70%;
     display: flex;
@@ -25,11 +24,9 @@
     padding: 5vw;
     box-sizing: border-box;
 }
-
 .right-upper > span{
     font-size: 2rem;
 }
-
 .left-upper{
     width: 30%;
     display: flex;

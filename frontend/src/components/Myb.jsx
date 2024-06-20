@@ -19,7 +19,9 @@ const Myb = () => {
                 <li>Uncover hidden opportunities to reach new customers and boost sales.</li>
                 <li>Develop data-driven recommendations to optimize your marketing efforts.</li>
             </ul>
+
         </div>
+        <button className='submitBtn'>Know more details and Proceed</button>
       </div>
     </div>
   )

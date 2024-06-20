@@ -81,3 +81,24 @@ tr{
 .submitBtn:hover{
     background-color: rgb(210, 210, 210);
 }
+
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #ccc;
+    box-shadow: 1 2 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.popup-content {
+    
+    text-align: center; 
+    color: #212121;
+}
+
