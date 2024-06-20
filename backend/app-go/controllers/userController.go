@@ -2,9 +2,7 @@ package controllers
 
 import (
 	"app-go/database"
-	"app-go/helpers"
 	helper "app-go/helpers"
-	"app-go/models"
 	models "app-go/models"
 	"context"
 	"fmt"
@@ -13,7 +11,6 @@ import (
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
-	"golang.org/x/crypto"
 	"golang.org/x/crypto/bcrypt"
 	"log"
 	"net/http"

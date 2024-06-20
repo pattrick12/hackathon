@@ -1,48 +1,49 @@
 import React from 'react'
 import './Home.css'
+import Logo from '../assets/Logo.svg'
 
 import Consultancy from '../assets/consultancy.svg'
 import myb from '../assets/myb.svg'
-import roti from '../assets/roti.svg'
 import bai from '../assets/bai.svg'
 import byb from '../assets/byb.svg'
-import he from '../assets/he.svg'
 import bea from '../assets/bea.svg'
+import he from '../assets/he.svg'
+import roti from '../assets/roti.svg'
 
-import Card from './Card'
 
-const Home = ({home}) => {
+const Home = () => {
   return (
-    <div className={home?"main":"hidden"}>
-      <div className="community">
-        <div className="animation">
-          <div className="loader">
-          <div className="loader-square"></div>
-          <div className="loader-square"></div>
-          <div className="loader-square"></div>
-          <div className="loader-square"></div>
-          <div className="loader-square"></div>
-          <div className="loader-square"></div>
-          <div className="loader-square"></div>
-          </div>
+    <div className="home">
+        <div className="head flex align-center">
+            <p className='welcome'>Welcome to</p>
+            <div className='Logo flex justify-center align-center'>
+                <img src = {Logo} alt="Logo Image" />
+                <h1>Buildinect</h1>
+            </div>
+            <p className='subText'>Be you, While we Build You</p>
         </div>
-        <h1>Join the community</h1>
-      </div>
-      <div className="cards">
-        <div className="row">
-        <Card imageSource = {Consultancy} Heading="Free Consultancy" Text = "Book a free consultation with mentors to grow your start-up."/>
-        <Card imageSource = {myb} Heading="Market Your Business" Text = "Join our marketing course for experiencing the depth of digital and on-ground marketing."/>
-        <Card imageSource = {roti} Heading="Reach out to investors" Text = "Reach out to leading industrialists and start-up leaders through the community developed."/>
-        <Card imageSource = {byb} Heading="Boost Your Business" Text = "Get a full package of your customized business support in your area of interest."/>          
+        <div className="card-container">
+            <Card image={Consultancy} heading="Free Consultancy"/>
+            <Card image={myb} heading="Market Your Business"/>
+            <Card image={roti} heading="Reach out to Investors"/>
+            <Card image={byb} heading="Boost Your Business"/>
         </div>
-        <div className="row">
-        <Card imageSource = {bai} Heading="Be an Investor" Text = "Become an investor easily on our platform with few simple steps."/>          
-        <Card imageSource = {he} Heading="Hire Employees" Text = "Hire employees through looking at our AI - developed statistics of employees at very low salary for college students."/>          
-        <Card imageSource = {bea} Heading="Become an Employee" Text = "Connect college students with internships and jobs by using AI to grade their applications"/>
+        <div className="card-container">
+            <Card image={bai} heading="Be an Investor"/>
+            <Card image={he} heading="Hire an Employee"/>
+            <Card image={bea} heading="Become an Employee"/>
         </div>
-      </div>
     </div>
   )
 }
 
 export default Home
+
+export const Card = (props) => {
+  return (
+    <div className='Card'>
+        <img src={props.image} alt="" />
+        <p>{props.heading}</p>
+    </div>
+  )
+}

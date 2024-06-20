@@ -1,43 +1,24 @@
 import React from 'react'
-import logo from '../assets/Logo.svg'
 import './Navbar.css'
+import Logo from '../assets/Logo.svg'
 
-const Navbar = ({login, setLogin, home, setHome, about, setAbout, signUp, setSignUp}) => {
-  const handleClick = () => {
-    setLogin(true)
-  }
-  const handleHome = () => {
-    setHome(true)
-    setAbout(false)
-    setSignUp(false)
-  }
-  const handleAbout = () => {
-    setHome(false)
-    setAbout(true)
-    setSignUp(false)
-  }
-  const handleSignUp = () => {
-    setHome(false)
-    setAbout(false)
-    setSignUp(true)
-  }
-
-  return (
-    <div className="Nav">
-      <div className="logo">
-        <img src={logo} alt="Logo"/>
-        <h1 className="logoText">Buildinect</h1>
-      </div>
-      <div className="options">
-          <ul>
-          <li><button onClick={handleHome}>Home</button></li>
-          <li><button onClick={handleAbout}>About</button></li>
-          <li><button onClick={handleClick}>Log In</button></li>
-          <li><button className="signUp" onClick={handleSignUp}>Sign Up</button></li>
-        </ul>
-      </div>
-    </div>
-  )
+const Navbar = () => {
+    return (
+        <div className='nav'>
+            <div className="logo">
+                <img src={Logo} alt="Logo" />
+                <h1>Buildinect</h1>
+            </div>
+            <div className="links">
+                <ul className='list-links'>
+                    <li><button className='Btn'>Home</button></li>
+                    <li><button className='Btn'>About</button></li>
+                    <li><button className='Btn'>Log In</button></li>
+                    <li><button className='signUpBtn'>Sign Up</button></li>
+                </ul>
+            </div>
+        </div>
+    )
 }
 
 export default Navbar

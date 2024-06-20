@@ -1,0 +1,21 @@
+.footer{
+    display: flex;
+    height: 7vh;
+    background-color: #191919;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: Poppins;
+}
+.left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

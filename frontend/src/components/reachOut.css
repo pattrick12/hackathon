@@ -1,0 +1,76 @@
+.body-reachOut{
+    min-height: 86dvh;
+    background-color: #212121;
+    font-family: Poppins;
+    color: white;
+}
+
+.container-reachOut{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    gap : 1vw;
+    padding-top: 2vw;
+    flex-direction: column;
+}
+
+.form-reachOut{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    width: 100%;
+}
+
+.normal-input{
+    width: 70%;
+    padding: 0.5vw 1vw;
+    border-radius: 1rem;
+}
+
+table{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 2vw 2vw;
+}
+
+tr{
+    margin: 3vw 0px;
+}
+
+.col1{
+    width: 30%;
+    text-align: right;
+}
+
+.col2{
+    width: 70%;
+    text-align: left;
+}
+
+.submitBtnRO{
+    background-color: white;
+    padding: 0.5vw 1vw;
+    border-radius: 2rem;
+    color: #191919;
+    border: none;
+    font-size: 1vw;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.submitBtnRO:hover{
+    background-color: rgb(210, 210, 210);
+}

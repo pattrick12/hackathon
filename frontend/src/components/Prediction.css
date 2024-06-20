@@ -1,0 +1,102 @@
+.main-prediction{
+    min-height: 86dvh;
+    background-color: #212121;
+    font-family: Poppins;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+    box-sizing: border-box;
+}
+
+.graphs{
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-prediction > p{
+    font-size: 1.5rem;
+}
+
+.graph-img{
+    width: 100%;
+}
+
+.graph{
+    width: 20vw;
+}
+
+.note{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1vw 2vw;
+    width: 70%;
+    height: 20vh;
+    box-sizing: border-box;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.note > p{
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+.btnCR{
+    background-color: #212121;
+    color: white;
+    border: none;
+    padding: 1vw 2vw;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.ans{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.data-left{
+    font-size: 2rem;
+    text-align: center;
+    width: 30%;
+}
+
+.review{
+    margin-top: 3vw;
+    display: flex;
+    min-height: 10vh;
+}
+
+.l{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.l > p{
+    font-size: 1.5rem;
+}
+
+.r{
+    width: 70%;
+    display: flex;
+}
+
+.review-box{
+    background-color: white;
+    border-radius: 1rem;
+    height: inherit;
+    color: #212121;
+    padding: 1vw 2vw;
+}
