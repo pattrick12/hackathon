@@ -28,5 +28,14 @@ func main() {
 			"success": "Hello from api-2"})
 	})
 
+	// Define new routes
+	router.GET("/api/mentor", handlers.MentorHandler)
+	router.GET("/api/myb", handlers.MybHandler)
+	router.GET("/api/boost", handlers.BoostHandler)
+	router.POST("/api/bookaconsult", handlers.BookAConsultHandler)
+	router.GET("/api/calculator", handlers.CalculatorHandler)
+	router.GET("/api/prediction", handlers.PredictionHandler)
+	router.POST("/api/reachout", handlers.ReachOutHandler)
+
 	router.Run(":" + port)
 }
