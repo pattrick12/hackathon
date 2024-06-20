@@ -13,8 +13,14 @@ const Login = () => {
       ...prevForm,
       [name]: value
     }));
+
   };
 
+  const handleSubmit=()=>{
+    //postrequest call
+  }
+
+  
   return (
     <div className='body-signUp'>
       <div className="container-signUp">
@@ -38,7 +44,7 @@ const Login = () => {
             </tbody>
           </table>
         </form>
-        <button className='submitBtn'>Login</button>
+        <button className='submitBtn' onClick={()=>{handleSubmit}}>Login</button>
       </div>
     </div>
   );

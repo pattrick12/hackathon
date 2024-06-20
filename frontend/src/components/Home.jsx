@@ -11,7 +11,7 @@ import bea from '../assets/bea.svg';
 import he from '../assets/he.svg';
 import roti from '../assets/roti.svg';
 
-const Home = () => {
+const Home = ({isLoggedIn}) => {
   return (
     <div className="home">
       <div className="head flex align-center">
@@ -48,7 +48,7 @@ export const Card = (props) => {
       {link ? (
         <Link to={link}>
           <img src={image} alt={heading} />
-          <p style={{ fontFamily: 'Poppins', color: 'white' ,fontSize : '30px' }}>{heading}</p>
+          <p style={{ fontFamily: 'Poppins', color: 'white' ,fontSize : '20px' }}>{heading}</p>
         </Link>
       ) : (
         <>

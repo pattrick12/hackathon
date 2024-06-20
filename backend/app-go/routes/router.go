@@ -7,6 +7,6 @@ import (
 
 func Router() *mux.Router{
 	router:= mux.NewRouter()
-	router.HandlerFunc("/api/hackathon", middleware.)
+	router.HandlerFunc("/api/hackathon", middleware. )
 	return router
 }
